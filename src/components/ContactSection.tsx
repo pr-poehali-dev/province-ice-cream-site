@@ -23,6 +23,12 @@ const ContactSection = () => {
       info: "Ежедневно 9:00 - 22:00",
       subInfo: "Без выходных",
     },
+    {
+      icon: "Truck",
+      title: "Доставка",
+      info: "30-60 минут • от 500₽",
+      subInfo: "В пределах 15 км от кафе",
+    },
   ];
 
   return (
@@ -66,10 +72,20 @@ const ContactSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/booking">
+              <Link to="/delivery">
                 <Button
                   size="lg"
                   className="bg-tiffany hover:bg-tiffany/90 text-white px-6"
+                >
+                  <Icon name="Truck" size={20} className="mr-2" />
+                  Заказать доставку
+                </Button>
+              </Link>
+              <Link to="/booking">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-tiffany text-tiffany hover:bg-tiffany hover:text-white px-6"
                 >
                   <Icon name="Calendar" size={20} className="mr-2" />
                   Забронировать стол

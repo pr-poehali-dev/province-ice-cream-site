@@ -145,15 +145,27 @@ const MenuPreview = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Link to="/menu">
-            <Button
-              size="lg"
-              className="bg-tiffany hover:bg-tiffany/90 text-white px-8 py-3"
-            >
-              <Icon name="Menu" size={20} className="mr-2" />
-              Посмотреть полное меню
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/menu">
+              <Button
+                size="lg"
+                className="bg-tiffany hover:bg-tiffany/90 text-white px-8 py-3"
+              >
+                <Icon name="Menu" size={20} className="mr-2" />
+                Посмотреть полное меню
+              </Button>
+            </Link>
+            <Link to="/delivery">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-tiffany text-tiffany hover:bg-tiffany hover:text-white px-8 py-3"
+              >
+                <Icon name="Truck" size={20} className="mr-2" />
+                Заказать доставку
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

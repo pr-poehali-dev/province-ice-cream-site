@@ -41,6 +41,15 @@ const HeroSection = () => {
                   Посмотреть меню
                 </Button>
               </Link>
+              <Link to="/delivery">
+                <Button
+                  size="lg"
+                  className="bg-tiffany hover:bg-tiffany/90 text-white px-8 py-3 text-lg"
+                >
+                  <Icon name="Truck" size={20} className="mr-2" />
+                  Заказать доставку
+                </Button>
+              </Link>
               <Link to="/booking">
                 <Button
                   variant="outline"
